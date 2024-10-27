@@ -1,0 +1,13 @@
+root = true
+
+[*]
+indent_size = 4
+max_line_length = 120
+
+
+ktlint_standard_no-wildcard-imports = disabled
+ktlint_standard_trailing-comma-on-call-site = disabled
+ktlint_standard_trailing-comma-on-declaration-site = disabled
+ktlint_twitter-compose_param-order-check = disabled
+
+# twitter_compose_allowed_composition_locals =

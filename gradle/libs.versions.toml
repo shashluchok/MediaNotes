@@ -1,0 +1,41 @@
+[versions]
+kotlin = "2.0.0"
+coroutines = "1.8.1"
+compose = "1.7.4"
+compose-multiplatform = "1.6.11"
+compose-material3 = "1.3.0"
+compose-activity = "1.9.3"
+androidx-lifecycle = "2.8.6"
+agp = "8.3.2"
+
+
+
+[libraries]
+plugin-kotlin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+mpp-windowSizeClass = "dev.chrisbanes.material3:material3-window-size-class-multiplatform:0.3.1"
+
+# Kotlin
+kotlinx-collections-immutable = { group = "org.jetbrains.kotlinx", name = "kotlinx-collections-immutable", version = "0.3.5" }
+
+# Android libraries
+androidX-appCompat = "androidx.appcompat:appcompat:1.7.0"
+
+androidX-lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose" , version.ref = "androidx-lifecycle" }
+
+
+# Compose
+androidX-activity-compose = { group = "androidx.activity", name = "activity-compose" , version.ref = "compose-activity" }
+androidX-compose-navigation = "androidx.navigation:navigation-compose:2.8.3"
+ktlint-composeRules = "com.twitter.compose.rules:ktlint:0.0.26"
+
+
+[plugins]
+ktlint = { id = "org.jlleitschuh.gradle.ktlint", version = "11.4.0" }
+android-application = { id = "com.android.application", version.ref = "agp"}
+android-library = { id = "com.android.library", version.ref = "agp"}
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+markdownLint = { id = "com.appmattus.markdown", version = "0.6.0" }
+compose-multiplatform = { id = "org.jetbrains.compose", version.ref = "compose-multiplatform" }
+compose-kotlin = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+
